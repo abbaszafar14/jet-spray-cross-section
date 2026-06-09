@@ -117,6 +117,30 @@ DPI = 300           # resolution for figures
 7. **Per-frame analysis** for instantaneous statistics
 8. **Probability mapping** across all frames
 
+9. ## Example Results
+
+Below are example outputs from the cross-section analysis:
+
+### Processing Pipeline
+![Processing Pipeline](fig_processing_pipeline.png)
+
+*Left to right, top to bottom:*
+- *(a) Mean Raw Mie Scattering Image* - temporal average of all frames
+- *(b) Estimated Background* - synthesized from spray-free edge regions
+- *(c) Mean - Background* - background-subtracted result
+- *(d) Binary Mask (Otsu Threshold)* - spray boundary detection
+
+### Spray Boundary Detection
+![Spray Boundary](fig_spray_boundary.png)
+
+*Detected spray boundaries with different probability contours:*
+- **Cyan line** - Mean image binary contour (Otsu)
+- **Blue dashed line** - Spray presence probability P = 0.1
+- **Lime line** - Spray presence probability P = 0.5 (median)
+- **Red line** - Spray presence probability P = 0.9 (high confidence)
+
+---
+
 ## Author
 
 [Abbas Zafar]
